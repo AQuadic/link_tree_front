@@ -213,7 +213,7 @@ html::-webkit-scrollbar-track {
     width: 300px;
     margin: auto;
     max-width: 80%;
-    min-width: 80%;
+
   }
   .head .limkaty .btn_page {
     margin: auto;
@@ -1137,24 +1137,29 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
 .head .headImg1 .head12 {
   top: 80px;
   left: -18px;
+  width: 23%;
 }
 .head .headImg1 .head13 {
   bottom: 80px;
   right: 0px;
+  width: 16%;
 }
 .head .headImg1 .head14 {
   top: 48px;
   right: -40px;
+  width: 18%;
 }
 .head .headImg1 .head15 {
   top: 112px;
   right: -100px;
   z-index: -1;
+  width: 72%;
 }
 .head .headImg1 .head16 {
   bottom: 46px;
   left: -100px;
   z-index: -1;
+  width: 68%;
 }
 .head .headImg1:hover .head12 {
 
@@ -1177,4 +1182,55 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
   
   left: -120px;
  
+}
+@media(max-width:500px){
+  .head .headImg1 .head11 {
+    width: 60% !important;
+    
+}
+  .head .headImg1 .head12 {
+   
+    left: 26px;
+    width: 16%;
+}
+.head .headImg1 .head13 {
+  bottom: 41px;
+  right: 18px;
+  width: 14%;
+}
+  .head .headImg1 .head14 {
+    right: 12px;
+    width: 14%;
+}
+.head .headImg1 .head15 {
+  right: -36px;
+  width: 52%;
+}
+.head .headImg1 .head16 {
+  left: -30px;
+  width: 48%;
+}
+
+/*hover*/
+.head .headImg1:hover .head12 {
+  left: 2px;
+}
+.head .headImg1:hover .head13 {
+  
+  right: 0px;
+}
+.head .headImg1:hover .head14 {
+ 
+  right: -6px;
+}
+.head .headImg1:hover .head15 {
+
+  right: -64px;
+ 
+}
+.head .headImg1:hover .head16 {
+  
+  left: -52px;
+ 
+}
 }
