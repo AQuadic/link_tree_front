@@ -1109,6 +1109,10 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
 .head .headImg3 .head31 {
   width: 80% !important;
 }
+html[dir=rtl] .head .headImg3 .head31 {
+  margin-right: auto;
+  display: block;
+}
 .head .headImg3 .head32 {
   position: absolute;
   top: -50px;
@@ -1234,3 +1238,14 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
  
 }
 }
+/*image 2*/
+.head .headImg2 {}
+.head .headImg2 .head21{
+ width: 73% !important;
+}
+.head .headImg2 .head222{
+  position: absolute;
+}
+.head .headImg2 .head22{}
+.head .headImg2 .head24{}
+.head .headImg2 .head24{}
