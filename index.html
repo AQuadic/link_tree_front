@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- if dir=rtl mean that websit "Arabic" replace "en" >>> "ar" -->
     <link rel="stylesheet" href="./css/en.css">
@@ -100,8 +101,8 @@
             <a href="#" class="btn_page">Claim your link</a>
           </div>
         </div>
-        <div class="part2">
-          <img src="./images/head1.webp" alt="head" />
+        <div class="part2" >
+          <img src="./images/head1.webp" data-tilt  class="head11 parentImg"  alt="head" data-aos="zoom-in" data-aos-delay="0" />
         </div>
       </div>
     </section>
@@ -116,11 +117,13 @@
           </p>
           <a href="#" class="btn_page">Start For Free</a>
         </div>
-        <div class="part2">
-          <img src="./images/head2.webp" alt="head" />
+        <div class="part2" data-aos="zoom-in" data-aos-delay="0">
+          <img src="./images/head2.webp" data-tilt class="head21 parentImg" alt="head" />
         </div>
       </div>
     </section>
+
+
     <section class="head head1 m100">
       <div class="container content">
         <div class="part1">
@@ -132,11 +135,15 @@
           </p>
           <a href="#" class="btn_page">Try It Now</a>
         </div>
-        <div class="part2">
-          <img src="./images/head3.webp" alt="head" />
+        <div class="part2 headImg3" data-tilt data-aos="zoom-in" data-aos-delay="0">
+          <img src="./images/head32.webp" class="head32" alt="" data-aos="zoom-in-left" data-aos-delay="100">
+          <img src="./images/head31.webp"  class="head31 parentImg" data-aos="zoom-in" data-aos-delay="0"  alt="head" />
         </div>
       </div>
     </section>
+
+
+
     <section class="platforms container m80">
       <h2>All Your Platforms In One Place.</h2>
       <div class="allImg">
@@ -388,12 +395,25 @@
         </ul>
       </div>
     </footer>
-
+  
+   
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/tilt.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/slick.min.js"></script>
-
+   
+<script>
+  $('.js-tilt').tilt({
+    reset: false
+})
+const tilt = $('.js-tilt').tilt()
+tilt.methods.destroy.call(tilt);
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script>
       $(".centerSlick").slick({
         centerMode: true,
@@ -422,5 +442,6 @@
         ],
       });
     </script>
+   
   </body>
 </html>

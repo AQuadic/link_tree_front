@@ -193,10 +193,13 @@ html::-webkit-scrollbar-track {
 }
 .head .content .part2 {
   min-width: 300px;
+  position: relative;
 }
 .head .content .part2 img {
-  width: 100%;
   height: auto;
+}
+.head .content .part2 img.parentImg {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .head .content {
@@ -1105,3 +1108,18 @@ font-family: "DM Sans";
 
 
 /*end style*/
+.head .headImg3{
+  position: relative;
+}
+
+.head .headImg3 .head32{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: 0.8s;
+}
+.head .headImg3:hover .head32{
+  top: -20px;
+  right: -20px;
+}
