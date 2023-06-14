@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="link tree" />
+    <meta name="keywords" content="link tree" />
+    <title>link tree</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- if dir=rtl mean that websit "Arabic" replace "en" >>> "ar" -->
+    <link rel="stylesheet" href="./css/en.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div
+        class="container"
+        style="
+          background-color: white;
+          border-radius: 20px;
+          min-height: 74px;
+          border: 1px solid #f3f3f1;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        "
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img src="./images/logo.svg" alt="logo"
+        /></a>
+        <div class="mean_btn">
+          <form class="d-flex" style="gap: 14px" role="search">
+              <a href="signUp.html" class="btn_page">Sign Up Free</a>
+          </form>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="b" id="navbarSupportedContent"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"
+                >Templates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pricing.html">Pricing</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" style="gap: 14px" role="search">
+          <a href="logIn.html" class="btn_page2">Log In</a>
+              <a href="signUp.html" class="btn_page">Sign Up Free</a>
+            <button class="lang">
+              <img src="./images/lang.webp" alt="lang" />
+              <p>En</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="pricing container">
+      <div class="head_Pricing">
+        <h1>Pick the perfect plan</h1>
+        <div class="fillter_Btn">
+          <button class="buttonPricing active">Monthly</button>
+          <button class="buttonPricing">Yearly</button>
+        </div>
+      </div>
+      <div class="pricing_items">
+        <div class="item">
+          <div class="part1">
+            <h2>Free</h2>
+            <h3><span>$0</span> USD/month</h3>
+          </div>
+          <div class="part2">
+            <p>
+              Unlimited links and a customizable Linktree to connect your
+              community to everything you are.
+            </p>
+            <a href="" class="btn_page2">Start For Free</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="part1">
+            <h2>Starter</h2>
+            <h3><span>$5</span> USD/month</h3>
+          </div>
+          <div class="part2">
+            <p>
+              Unlimited links and a customizable Linktree to connect your
+              community to everything you are.
+            </p>
+            <a href="" class="btn_page2">Get Starter</a>
+          </div>
+        </div>
+        <div class="item free">
+          <div class="part1">
+            <p class="free_p">7-day free trial</p>
+
+            <h2>Pro</h2>
+            <h3><span>$9</span> USD/month</h3>
+          </div>
+          <div class="part2">
+            <p>
+              Unlimited links and a customizable Linktree to connect your
+              community to everything you are.
+            </p>
+            <a href="" class="btn_page">Start For Free</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="part1">
+            <h2>Premium</h2>
+            <h3><span>$24</span> USD/month</h3>
+          </div>
+          <div class="part2">
+            <p>
+              Unlimited links and a customizable Linktree to connect your
+              community to everything you are.
+            </p>
+            <a href="" class="btn_page2">Get Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container content">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion all_questions" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Why do I need a link in bio tool?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Right now, every time you’ve got something new to share, you
+                have to go to every single one of your channels to change the
+                link in each of your bios. It’s time-consuming and complicated –
+                making it so much harder to keep everything up to date. A link
+                in bio tool means you never have to compromise, or remove one
+                link from your bio so you can add another. You can keep
+                everything you want to share online in one link. When you’ve got
+                a change, you only ever have to make it once.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Is LINKATY safe to use on all of my social media profiles?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Right now, every time you’ve got something new to share, you
+                have to go to every single one of your channels to change the
+                link in each of your bios. It’s time-consuming and complicated –
+                making it so much harder to keep everything up to date. A link
+                in bio tool means you never have to compromise, or remove one
+                link from your bio so you can add another. You can keep
+                everything you want to share online in one link. When you’ve got
+                a change, you only ever have to make it once.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What makes LINKATY better than the other link in bio options?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Right now, every time you’ve got something new to share, you
+                have to go to every single one of your channels to change the
+                link in each of your bios. It’s time-consuming and complicated –
+                making it so much harder to keep everything up to date. A link
+                in bio tool means you never have to compromise, or remove one
+                link from your bio so you can add another. You can keep
+                everything you want to share online in one link. When you’ve got
+                a change, you only ever have to make it once.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content container">
+        <h3>
+          Copyright © 2023 LINKATY Made by
+          <a href="">AQuadic Software Solutions</a>
+        </h3>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact US</a>
+        </div>
+
+        <ul class="links_social">
+          <li>
+            <a href="#">
+              <img src="./images/facebook.webp" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/linkedin.webp" alt="linkedi" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/instagram.webp" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/twitter.webp" alt="twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+      const buttons = document.querySelectorAll(".buttonPricing");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          buttons.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
