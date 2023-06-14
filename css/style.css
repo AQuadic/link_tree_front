@@ -7,6 +7,7 @@
 body {
   background: #f3f3f1;
   padding-top: 196px;
+  overflow-x: hidden;
 }
 
 input::placeholder {
@@ -97,7 +98,6 @@ html::-webkit-scrollbar-track {
   text-align: start;
   font-family: "inter";
 }
-
 
 .p_page {
   font-size: 20px;
@@ -194,6 +194,7 @@ html::-webkit-scrollbar-track {
 .head .content .part2 {
   min-width: 300px;
   position: relative;
+  margin: auto;
 }
 .head .content .part2 img {
   height: auto;
@@ -201,11 +202,13 @@ html::-webkit-scrollbar-track {
 .head .content .part2 img.parentImg {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .head .content {
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 64px 30px;
   }
+}
+@media (max-width: 768px) {
   .head .content .part2 {
     width: 300px;
     margin: auto;
@@ -472,7 +475,7 @@ html[dir="rtl"] .accordion-button::after {
   transition: 0.5s;
   transition-delay: 0.3s;
 }
-[dir='rtl'] .slick-slide {
+[dir="rtl"] .slick-slide {
   float: left;
 }
 @media (max-width: 992px) {
@@ -637,10 +640,10 @@ html[dir="rtl"] .accordion-button::after {
 .navbar .navbar-collapse .btn_page {
   display: none;
 }
-html[dir=rtl] ul.navbar-nav{
+html[dir="rtl"] ul.navbar-nav {
   margin-right: 0 !important;
 }
-html[dir=rtl]  form.d-flex {
+html[dir="rtl"] form.d-flex {
   margin-right: auto;
 }
 @media (min-width: 992px) {
@@ -885,15 +888,14 @@ html[dir="rtl"] .signParent::before {
   .passcode-wrapper input {
     width: 78px;
     height: 52px;
-   
-}
+  }
 }
 /* end sign*/
 /* start pricing*/
-.pricing{
+.pricing {
   margin-bottom: 100px;
 }
-.pricing .head_Pricing{
+.pricing .head_Pricing {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -901,25 +903,25 @@ html[dir="rtl"] .signParent::before {
   width: 62%;
   margin-left: auto;
 }
-html[dir=rtl] .pricing .head_Pricing{
-  margin-left: 0; 
-   margin-right: auto;
+html[dir="rtl"] .pricing .head_Pricing {
+  margin-left: 0;
+  margin-right: auto;
 }
-.pricing .head_Pricing h1{
+.pricing .head_Pricing h1 {
   font-size: 24px;
   line-height: 31px;
 }
-.pricing .head_Pricing .fillter_Btn{
-  background: #FFFFFF;
-border-radius: 50px;
-width: 258px;
-height: 70px;
-padding: 4px 14px;
-display: flex;
-align-items: center;
-justify-content: space-between;
+.pricing .head_Pricing .fillter_Btn {
+  background: #ffffff;
+  border-radius: 50px;
+  width: 258px;
+  height: 70px;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.pricing .head_Pricing .fillter_Btn button{
+.pricing .head_Pricing .fillter_Btn button {
   background: transparent;
   border: none;
   flex: 1;
@@ -928,198 +930,243 @@ justify-content: space-between;
   border-radius: 28px;
   height: 100%;
 }
-.pricing .head_Pricing .fillter_Btn button.active{
+.pricing .head_Pricing .fillter_Btn button.active {
   color: white;
   background-color: var(--main_color);
 }
-.pricing .pricing_items{
+.pricing .pricing_items {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-.pricing .pricing_items .item{
+.pricing .pricing_items .item {
   background-color: white;
-border-radius: 20px;
-max-width: 400px;
-overflow: hidden;
-flex: 1;
-min-width: 240px;
+  border-radius: 20px;
+  max-width: 400px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 240px;
 }
-.pricing .pricing_items .item.free{
-  background: #E4E4E4;
- 
+.pricing .pricing_items .item.free {
+  background: #e4e4e4;
 }
-.pricing .pricing_items .item.free .part1{
+.pricing .pricing_items .item.free .part1 {
   position: relative;
-  background: #0181C6;
+  background: #0181c6;
 }
-.pricing .pricing_items .item.free .part1 .free_p{
+.pricing .pricing_items .item.free .part1 .free_p {
   font-size: 13px;
   line-height: 17px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 10px;
-background: #053A56;
-border-radius: 0px 20px;
-position: absolute;
-top: 0;
-right: 0;
+  background: #053a56;
+  border-radius: 0px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-html[dir=rtl] .pricing .pricing_items .item.free .part1 .free_p{
+html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
   right: auto;
   left: 0;
   border-radius: 20px 0px;
 }
 
-.pricing .pricing_items .item .part1{
+.pricing .pricing_items .item .part1 {
   padding: 30px 16px 16px;
   background-color: white;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #f1f1f1;
 }
-.pricing .pricing_items .item .part1 h2{
+.pricing .pricing_items .item .part1 h2 {
   font-size: 28px;
-line-height: 36px;
-color: var(--main_color);
-margin-bottom: 12px;
-text-align: center;
+  line-height: 36px;
+  color: var(--main_color);
+  margin-bottom: 12px;
+  text-align: center;
 }
-.pricing .pricing_items .item .part1 h3{
+.pricing .pricing_items .item .part1 h3 {
   font-size: 20px;
-line-height: 26px;
-font-family: "DM Sans3";
-text-align: center;
-
+  line-height: 26px;
+  font-family: "DM Sans3";
+  text-align: center;
 }
-.pricing .pricing_items .item .part1 h3 span{
+.pricing .pricing_items .item .part1 h3 span {
   font-size: 28px;
-line-height: 36px;
-font-family: "DM Sans";
-
+  line-height: 36px;
+  font-family: "DM Sans";
 }
-.pricing .pricing_items .item .part2{
+.pricing .pricing_items .item .part2 {
   padding: 22px 22px 30px;
 }
-.pricing .pricing_items .item .part2 p{
+.pricing .pricing_items .item .part2 p {
   font-size: 18px;
-line-height: 23px;
-text-align: center;
-font-family: "DM Sans3";
-margin-bottom: 26px;
-color: #454545;
+  line-height: 23px;
+  text-align: center;
+  font-family: "DM Sans3";
+  margin-bottom: 26px;
+  color: #454545;
 }
-.pricing .pricing_items .item .part2 a{
-  width:100%;
-height: 50px;
-font-size: 18px;
-line-height: 23px;
+.pricing .pricing_items .item .part2 a {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 /*free*/
 
-.pricing .pricing_items .item.free .part1 h2{
+.pricing .pricing_items .item.free .part1 h2 {
   color: white;
 }
-.pricing .pricing_items .item.free .part1 h3{
+.pricing .pricing_items .item.free .part1 h3 {
   color: white;
 }
-.pricing .pricing_items .item.free .part2{}
+.pricing .pricing_items .item.free .part2 {
+}
 
-
-
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .pricing .head_Pricing {
-   
     justify-content: space-around;
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
-}
+  }
 }
 /* end pricing*/
 /* start design_Link*/
-.design_Link{
+.design_Link {
   min-height: 100vh;
-  background-image: url('../images/backLink.webp');
+  background-image: url("../images/backLink.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.design_Link .content{
+.design_Link .content {
   padding-top: 96px;
   padding-bottom: 60px;
 }
-.design_Link .content .person{
+.design_Link .content .person {
   width: 182px;
-height: 182px;
-border-radius: 50%;
-margin:  0px auto 62px;
-display: block;
+  height: 182px;
+  border-radius: 50%;
+  margin: 0px auto 62px;
+  display: block;
 }
-.design_Link .content .links_Person{
+.design_Link .content .links_Person {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
-.design_Link .content .links{
+.design_Link .content .links {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.design_Link .content .links .link{
+.design_Link .content .links .link {
   padding: 8px 22px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 15px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.design_Link .content .links .link img{
-  min-width:70px;
+.design_Link .content .links .link img {
+  min-width: 70px;
   max-width: 70px;
-height: 56px;
+  height: 56px;
 }
-.design_Link .content .links .link p{
+.design_Link .content .links .link p {
   font-size: 20px;
-line-height: 26px;
-font-family: "DM Sans";
-
+  line-height: 26px;
+  font-family: "DM Sans";
 }
 .design_Link .logo {
   margin: 60px auto 0px;
   display: block;
   text-align: center;
 }
-@media (max-width:500px) {
-  .design_Link .content .links .link p{
+@media (max-width: 500px) {
+  .design_Link .content .links .link p {
     font-size: 16px;
-  line-height: 22px;
+    line-height: 22px;
   }
-  .design_Link .content .links .link{
+  .design_Link .content .links .link {
     padding: 8px 16px;
-  
+
     gap: 14px;
   }
 }
 /* end design_Link*/
 
-
 /*end style*/
-.head .headImg3{
+/*image 3*/
+.head .headImg3 {
   position: relative;
 }
-
-.head .headImg3 .head32{
+.head .headImg3 .head31 {
+  width: 80% !important;
+}
+.head .headImg3 .head32 {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
   z-index: 1;
   transition: 0.8s;
+  width: 64%;
 }
-.head .headImg3:hover .head32{
+.head .headImg3:hover .head32 {
   top: -20px;
   right: -20px;
+}
+
+/*image 1*/
+.head .headImg1 img{
+}
+.head .headImg1 .head11 {
+  width: 80% !important;
+  
+}
+.head .headImg1 .head111 {
+  position: absolute;
+  transition: 0.7s;
+}
+.head .headImg1 .head12 {
+  top: 80px;
+  left: -50px;
+}
+.head .headImg1 .head13 {
+  bottom: 80px;
+  right: 0px;
+}
+.head .headImg1 .head14 {
+  top: 84px;
+  right: 4px;
+}
+.head .headImg1 .head15 {
+  top: 112px;
+  right: -50px;
+  z-index: -1;
+}
+.head .headImg1 .head16 {
+  bottom: 46px;
+  left: -130px;
+  z-index: -1;
+}
+.head .headImg1:hover .head12 {
+  left: -70px;
+}
+.head .headImg1:hover .head13 {
+  right: -20px;
+}
+.head .headImg1:hover .head14 {
+  right: -16px;
+}
+.head .headImg1:hover .head15 {
+  right: -70px;
+}
+.head .headImg1:hover .head16 {
+  left: -140px;
 }
