@@ -192,6 +192,9 @@ html::-webkit-scrollbar-track {
   line-height: 28px;
   width: 100%;
 }
+html[dir=rtl] .head .limkaty .btn_page {
+  font-size: 16px;
+}
 .head .content .part2 {
   min-width: 300px;
   position: relative;
@@ -630,6 +633,10 @@ html[dir="rtl"] .accordion-button::after {
   line-height: 23px;
   width: 176px;
   height: 50px;
+}
+html[dir=rtl] .navbar .btn_page2 , html[dir=rtl] .navbar .btn_page{
+  font-size: 14px;
+  
 }
 .navbar .nav-link {
   font-size: 18px;
