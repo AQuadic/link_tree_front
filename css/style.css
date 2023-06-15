@@ -166,6 +166,7 @@ html::-webkit-scrollbar-track {
   font-size: 20px;
   line-height: 28px;
   font-family: "DM Sans2";
+  text-transform: lowercase;
 }
 .head .limkaty input {
   height: 30px;
@@ -677,8 +678,8 @@ html[dir="rtl"] form.d-flex {
   }
   .navbar .btn_page2 {
     font-size: 16px;
-    height: 36px;
-    width: 90px;
+    height: 40px;
+    width: 130px;
   }
   .mean_btn {
     gap: 0px;
