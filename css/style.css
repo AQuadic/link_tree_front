@@ -645,7 +645,7 @@ html[dir="rtl"] .accordion-button::after {
   display: none;
 }
 html[dir="rtl"] ul.navbar-nav {
-  margin-right: 0 !important;
+  margin-right: 16px !important;
 }
 html[dir="rtl"] form.d-flex {
   margin-right: auto;
