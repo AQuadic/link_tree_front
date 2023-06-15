@@ -6,7 +6,7 @@
 }
 body {
   background: #f3f3f1;
-  padding-top: 196px;
+  padding-top: 62px;
   overflow-x: hidden;
 }
 
@@ -110,7 +110,7 @@ html::-webkit-scrollbar-track {
     line-height: 50px;
   }
   body {
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .m80 {
     padding-bottom: 60px;
@@ -585,10 +585,11 @@ html[dir="rtl"] .accordion-button::after {
   display: none;
 }
 .navbar {
-  position: fixed;
-  top: 64px;
+  position: sticky;
+  top: 18px;
   width: 100%;
   z-index: 5000;
+  margin-bottom: 60px;
 }
 .navbar .navbar-brand {
 }
