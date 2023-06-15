@@ -645,7 +645,7 @@ html[dir="rtl"] .accordion-button::after {
   display: none;
 }
 html[dir="rtl"] ul.navbar-nav {
-  margin-right: 16px !important;
+  margin-right: 4px !important;
 }
 html[dir="rtl"] form.d-flex {
   margin-right: auto;
@@ -654,6 +654,10 @@ html[dir="rtl"] form.d-flex {
   .navbar .navbar-collapse .btn_page {
     display: flex;
   }
+  .navbar-expand-lg .navbar-collapse {
+  
+    padding: 0px 10px;
+}
 }
 @media (max-width: 992px) {
   .mean_btn {
