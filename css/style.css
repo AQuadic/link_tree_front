@@ -1260,6 +1260,7 @@ html[dir="rtl"] .head .headImg3 .head31 {
 .head .headImg2:hover .head24 {
   right: -110px;
 }
+@media(min-width:992px){
 /*ar*/
 html[dir=rtl] .head .headImg2 .head22 {
   
@@ -1286,6 +1287,8 @@ html[dir=rtl] .head .headImg2:hover .head24 {
   right: -190px;
 }
 /*ene ar*/
+}
+
 @media (max-width: 992px) {
   .head .headImg2 .head21 {
     width: 73% !important;
