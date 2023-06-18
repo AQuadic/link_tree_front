@@ -1,156 +1,158 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Linkaty | لينكاتي" />
-    <meta name="keywords" content="Linkaty | لينكاتي" />
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Linkaty | لينكاتي" name="description"/>
+    <meta content="Linkaty | لينكاتي" name="keywords"/>
     <title>Linkaty | لينكاتي</title>
-    <link rel="shortcut icon" href="./images/Icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <link href="./images/Icon.svg" rel="shortcut icon" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="./css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/slick-theme.css" rel="stylesheet" type="text/css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.rtl.min.css"
-      integrity="sha512-sBvFexih8/HG6HayD7CJlCGlMIfdewyHBe2JBSb7vXRuL6qOmfo059kkqfFFwvnC9qIB6med8QO/ZDkVDcI1ng=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.rtl.min.css"
+            integrity="sha512-sBvFexih8/HG6HayD7CJlCGlMIfdewyHBe2JBSb7vXRuL6qOmfo059kkqfFFwvnC9qIB6med8QO/ZDkVDcI1ng=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+            href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link href="./css/all.min.css" rel="stylesheet"/>
     <!-- if dir=rtl mean that websit "Arabic" replace "en" >>> "ar" -->
-    <link rel="stylesheet" href="./css/en.css">
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body style="padding: 0;">
+    <link href="./css/en.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body style="padding: 0;">
 <div class="container   " style="margin-top: 44px;">
-    <a href="index.html" class="logo2"> 
-        <img src="./images/logo.svg" alt="logo">  
+    <a class="logo2" href="index.html">
+        <img alt="logo" src="./images/logo.svg">
     </a>
 </div>
-    <div class="sign ">
-      
-        <div class="content">
-            <div class="part">
-                <h1 style="margin-bottom: 12px;">Verify Your Email Address</h1>
-                <p class="p_sign" >Please enter the verification code we sent to your Email Address</p>
-                <form action="">
-                    <div class="passcode-wrapper">
-                      <input
-                        id="codeBox1"
-                        type="number"
-                        maxlength="1"
-                        onkeyup="onKeyUpEvent(1, event)"
-                        onfocus="onFocusEvent(1)"
-                      />
-                      <input
-                        id="codeBox2"
-                        type="number"
-                        maxlength="1"
-                        onkeyup="onKeyUpEvent(2, event)"
-                        onfocus="onFocusEvent(2)"
-                      />
-                      <input
-                        id="codeBox3"
-                        type="number"
-                        maxlength="1"
-                        onkeyup="onKeyUpEvent(3, event)"
-                        onfocus="onFocusEvent(3)"
-                      />
-                      <input
-                        id="codeBox4"
-                        type="number"
-                        maxlength="1"
-                        onkeyup="onKeyUpEvent(4, event)"
-                        onfocus="onFocusEvent(4)"
-                      />
-                    </div>
-            
-                    <p id="counter" class="counter red">02:00 s</p>
-                    <h4>
-                      If you don’t receive a code!
-                      <button id="resend" disabled>Resend</button>
-                    </h4>
-                    <input type="submit" id="ss" class="btn_page" value="Verify" />
-                    <p class="have"><a href="logIn.html" >Back To Log In</a></p>
-                  </form>
-               
-            </div>
-            <div class="copy">
-              <p>Copyright © 2023 <strong>LINKATY</strong> Made by <a href=""> AQuadic Software Solutions</a></p>
-          </div>
+<div class="sign ">
+
+    <div class="content">
+        <div class="part">
+            <h1 style="margin-bottom: 12px;">Verify Your Email Address</h1>
+            <p class="p_sign">Please enter the verification code we sent to your Email Address</p>
+            <form action="">
+                <div class="passcode-wrapper">
+                    <input
+                            id="codeBox1"
+                            maxlength="1"
+                            onfocus="onFocusEvent(1)"
+                            onkeyup="onKeyUpEvent(1, event)"
+                            type="number"
+                    />
+                    <input
+                            id="codeBox2"
+                            maxlength="1"
+                            onfocus="onFocusEvent(2)"
+                            onkeyup="onKeyUpEvent(2, event)"
+                            type="number"
+                    />
+                    <input
+                            id="codeBox3"
+                            maxlength="1"
+                            onfocus="onFocusEvent(3)"
+                            onkeyup="onKeyUpEvent(3, event)"
+                            type="number"
+                    />
+                    <input
+                            id="codeBox4"
+                            maxlength="1"
+                            onfocus="onFocusEvent(4)"
+                            onkeyup="onKeyUpEvent(4, event)"
+                            type="number"
+                    />
+                </div>
+
+                <p class="counter red" id="counter">02:00 s</p>
+                <h4>
+                    If you don’t receive a code!
+                    <button disabled id="resend">Resend</button>
+                </h4>
+                <input class="btn_page" id="ss" type="submit" value="Verify"/>
+                <p class="have"><a href="logIn.html">Back To Log In</a></p>
+            </form>
+
+        </div>
+        <div class="copy">
+            <p>Copyright © 2023 <strong>LINKATY</strong> Made by <a href=""> AQuadic Software Solutions</a></p>
         </div>
     </div>
+</div>
 
 
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    const time = document.getElementById("counter");
+    const resend = document.getElementById("resend");
+    const ss = document.getElementById("ss");
 
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-        const time = document.getElementById("counter");
-        const resend = document.getElementById("resend");
-        const ss = document.getElementById("ss");
-  
-        const starttime = 2;
-        let secound = starttime * 60;
-  
-        const myTimeout = setInterval(udtime, 1000);
-        /*ss.addEventListener('click' , function (e) {
-             e.preventDefault();
-             const myTimeout = setInterval(udtime, 1000);
-          })*/
-        function udtime() {
-          const min = Math.floor(secound / 60);
-          let sec = secound % 60;
-          sec = sec < 10 ? "0" + sec : sec;
-          if (min === 0 && sec == "00") {
+    const starttime = 2;
+    let secound = starttime * 60;
+
+    const myTimeout = setInterval(udtime, 1000);
+
+    /*ss.addEventListener('click' , function (e) {
+         e.preventDefault();
+         const myTimeout = setInterval(udtime, 1000);
+      })*/
+    function udtime() {
+        const min = Math.floor(secound / 60);
+        let sec = secound % 60;
+        sec = sec < 10 ? "0" + sec : sec;
+        if (min === 0 && sec == "00") {
             clearInterval(myTimeout);
             resend.disabled = false;
             resend.classList.add("resend");
             time.classList.add("red");
-          } else {
+        } else {
             resend.classList.remove("resend");
             time.classList.remove("red");
-          }
-  
-          time.innerHTML = `0${min} : ${sec} s`;
-          secound--;
         }
-      </script>
-  
-      <script>
-        function getCodeBoxElement(index) {
-          return document.getElementById("codeBox" + index);
-        }
-        function onKeyUpEvent(index, event) {
-          const eventCode = event.which || event.keyCode;
-          if (getCodeBoxElement(index).value.length === 1) {
+
+        time.innerHTML = `0${min} : ${sec} s`;
+        secound--;
+    }
+</script>
+
+<script>
+    function getCodeBoxElement(index) {
+        return document.getElementById("codeBox" + index);
+    }
+
+    function onKeyUpEvent(index, event) {
+        const eventCode = event.which || event.keyCode;
+        if (getCodeBoxElement(index).value.length === 1) {
             if (index !== 4) {
-              getCodeBoxElement(index + 1).focus();
+                getCodeBoxElement(index + 1).focus();
             } else {
-              getCodeBoxElement(index).blur();
-              // Submit code
-              console.log("submit code ");
+                getCodeBoxElement(index).blur();
+                // Submit code
+                console.log("submit code ");
             }
-          }
-          if (eventCode === 8 && index !== 1) {
-            getCodeBoxElement(index - 1).focus();
-          }
         }
-        function onFocusEvent(index) {
-          for (item = 1; item < index; item++) {
+        if (eventCode === 8 && index !== 1) {
+            getCodeBoxElement(index - 1).focus();
+        }
+    }
+
+    function onFocusEvent(index) {
+        for (item = 1; item < index; item++) {
             const currentElement = getCodeBoxElement(item);
             if (!currentElement.value) {
-              currentElement.focus();
-              break;
+                currentElement.focus();
+                break;
             }
-          }
         }
-      </script>
-  </body>
+    }
+</script>
+</body>
 </html>
