@@ -9,7 +9,7 @@ Frontend Made by [AQuadic](https://aquadic.com)
 ## Important Links
 
 - [AQuadic](https://aquadic.com)
-
+- [Design](https://www.figma.com/file/1rI25LCw7iFa5kYWpa8Nzo/Link-Tree)
 - [Live Site](https://aquadic.github.io/link_tree_front)
 
 ## Installation
