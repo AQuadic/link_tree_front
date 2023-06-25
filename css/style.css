@@ -1232,10 +1232,12 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
 /* start design_Link*/
 .design_Link {
     min-height: 100vh;
-    background-image: url("../images/backLink.webp");
+  /*background-image: url("../images/backLink.webp");*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background: rgb(141,151,186);
+background: radial-gradient(circle, rgba(141,151,186,1) 1%, rgba(119,107,147,1) 95%);
 }
 
 .design_Link .content {
@@ -1258,11 +1260,37 @@ html[dir="rtl"] .pricing .pricing_items .item.free .part1 .free_p {
     gap: 24px;
     margin-bottom: 40px;
 }
-
+.design_Link .content .links_Person li a {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.design_Link .content .links_Person li a::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background-color: #ffffff;
+    filter: blur(12px);
+}
+.design_Link .content .links_Person li a img{
+    display: block;
+    z-index: 2;
+    position: relative;
+}
 .design_Link .content .links {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .design_Link .content .links .link {
