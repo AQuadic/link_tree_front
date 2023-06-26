@@ -1299,7 +1299,9 @@ background: radial-gradient(circle, rgba(141,151,186,1) 1%, rgba(119,107,147,1) 
     border-radius: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
+    position: relative;
 }
 
 .design_Link .content .links .link img {
@@ -1312,6 +1314,7 @@ background: radial-gradient(circle, rgba(141,151,186,1) 1%, rgba(119,107,147,1) 
     font-size: 20px;
     line-height: 26px;
     font-family: "DM Sans";
+    flex: 1;
 }
 
 .design_Link .logo {
@@ -1319,7 +1322,10 @@ background: radial-gradient(circle, rgba(141,151,186,1) 1%, rgba(119,107,147,1) 
     display: block;
     text-align: center;
 }
+.design_Link .num-Links{
+ flex: 0 !important;
 
+}
 @media (max-width: 500px) {
     .design_Link .content .links .link p {
         font-size: 16px;
