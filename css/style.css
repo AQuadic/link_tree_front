@@ -362,7 +362,9 @@ footer ul li a img {
     color: white;
     padding: 50px 0px 64px;
 }
-
+.questions .accordion-button::after{
+margin-right: 0;
+}
 .questions a {
     color: white;
 }
